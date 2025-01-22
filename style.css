@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+:root {
+  --content-primary: #FFFFFF;
+  --content-secondary: #C7C9CC;
+  --content-tertiary: #D9D9D9;
+  --content-brand: #C58DE7;
+  --color-inverse: #030203;
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222E;
+  --background-brand: #C58DE7;
+  --background-gray: #3D3D3D;
+  --accent-pink: #D586E0;
+  --accent-blue: #91A1FA;
+  --accent-green: #77C0AA;
+  --accent-lime: #D1DC97;
+  --accent-red: #E9A9B3;
+
+  --display-large: "Sora", serif; 
+  --paragraph: "Roboto Mono", serif;
+  --paragraph-flex: "Roboto Flex", serif;;
+}
+
+body {
+  background-image: url(assets/Shapes.png);
+  background-color: #020202;
+}
+
+.total {
+  display: grid;
+  justify-content: center;
+
+}
+
+.header {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  
+}
+
+.title-header {
+  font-family: var(--display-large);
+  color: var(--content-primary);
+  font-weight: 800;
+  padding-left: 10px;
+}
+
+.main {
+  color: var(--content-primary);
+  display: flex;
+  padding-top: 60px;
+}
+
+.text-1 {
+  font-family: var(--paragraph);
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.title-main {
+  font-family: var(--display-large);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 72px  ;
+}
