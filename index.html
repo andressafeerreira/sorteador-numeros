@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-  <!--<link rel="" href="https://www.flaticon.com/">-->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body>
@@ -50,29 +49,44 @@
         <div class="number">
         <div class="number-2">
           <span class="style-number">NÚMEROS</span>
-          <input class="style-number-2" placeholder="2"></input>
+          <input class="style-number-2" placeholder="2" id="style-number-2"></input>
         </div>
         <div class="number-2">
           <span class="style-number">DE</span>
-          <input class="style-number-2" placeholder="1"></input>
+          <input class="style-number-2" placeholder="1" id="primeiro-valor-input"></input>
         </div>
         <div class="number-2">
           <span class="style-number">DE</span>
-          <input class="style-number-2" placeholder="100"></input>
+          <input class="style-number-2" placeholder="100" id="segundo-valor-input"></input>
         </div>
         </div>
+
         <div class="no-repeat">
-          <button class="button-1">
+          <label class="switch">
+          <input type="checkbox" class="button-1">
             <span class="ball"></span>
-          </button>
+        </input>
+        </label>
           <p class="title-button">Não repetir número</p>
         </div>
+
+
+
         <div class="button-2">
-          <button class="draw">
+          <button class="draw" onclick="sortear()">
             SORTEAR
             <img src="assets/seta.svg" alt="">
           </button>       
         </div>
+        <div>
+        <div class="result">
+          <div class="results-value">
+           <!-- <div class="result-value"></div>-->
+           <!-- <div class="result-value"></div>-->
+           <!-- <div class="result-value"></div>-->
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>

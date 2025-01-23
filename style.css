@@ -154,6 +154,19 @@ body {
   
 }
 
+.style-number-2:hover {
+  border: 2px solid var( --accent-pink);
+}
+
+
+.style-number-2:focus {
+  outline: none;
+  border: 2px solid transparent;
+  border-image: linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
 input {
   text-align: center;
 }
@@ -162,6 +175,19 @@ input {
   display: flex;
   align-items: center;
   padding-left: 8px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 
@@ -178,6 +204,54 @@ input {
 }
 
 .ball {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-gray);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 14px;
+}
+
+.ball:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+input:checked + .ball {
+  background-color: var(--accent-pink)
+}
+
+input:focus + .ball {
+  box-shadow: 0 0 1px var(--accent-pink);
+}
+
+input:checked + .ball:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*.ball {
   width: 24px;
   height: 24px;
   background-color: white;
@@ -186,12 +260,12 @@ input {
   top: 3px;
   left: 3px;
   transition: 0.3s ease;
-}
+}*/
 
 .title-button {
   font-family: var(--paragraph-flex);
   padding-left: 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .button-2 {
@@ -214,4 +288,42 @@ input {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+
+.draw:hover {
+  background-color: var(--background-tertiary);
+}
+
+.draw:focus {
+  outline: none;
+  border: 2px solid transparent;
+  border-image: linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+.result {
+  padding-top: 20px;
+  width: 77px;
+  height: 98px;
+  
+  
+}
+
+.results-value {
+  padding-top: 26px;
+  border-radius: 10px;
+  background-color: var(--accent-pink);
+  color: #030203;
+  font-family: var(--paragraph);
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 20px;
+}
+
+.result-value {
+ 
+
 }
