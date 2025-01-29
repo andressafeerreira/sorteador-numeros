@@ -303,13 +303,14 @@ input:checked + .ball:before {
   background-color: var(--background-gray);
 }
 
-/*.result {
+.results {
+  display: flex;
+  justify-content: center;
   padding-top: 20px;
-  width: 77px;
-  height: 98px;
+  gap: 18px;
+}
   
-  
-}*/
+
 
 .results-value {
   padding-top: 26px;
@@ -321,8 +322,10 @@ input:checked + .ball:before {
   font-weight: 800;
   display: flex;
   align-items: center;
-  padding: 10px 10px 10px 20px;
-  width: 10px;
+  padding: 10px 10px 10px 10px;
+  width: 70px;
+  height: 56px;
+  justify-content: center;
 }
 
 .result-value {
