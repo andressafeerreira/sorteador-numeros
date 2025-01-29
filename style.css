@@ -300,15 +300,16 @@ input:checked + .ball:before {
   border-image: linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
   border-image-slice: 1;
   border-radius: 8px;
+  background-color: var(--background-gray);
 }
 
-.result {
+/*.result {
   padding-top: 20px;
   width: 77px;
   height: 98px;
   
   
-}
+}*/
 
 .results-value {
   padding-top: 26px;
@@ -321,6 +322,7 @@ input:checked + .ball:before {
   display: flex;
   align-items: center;
   padding: 10px 10px 10px 20px;
+  width: 10px;
 }
 
 .result-value {
